@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <!-- Here goes the metadata -->  
       <meta charset="utf-8">
       <title> HTML5 basics </title>
+       <script src="script.js"></script>
    </head>
    <body>
-      <!-- Here goes the visible content of the page -->
-      <header>
-         <h1>Javascript basics</h1>
-      </header>
-      <p>Welcome to the jungle!</p>  
-        <script src="script.js"></script> 
+      
+      <table id = "Oggetti" border="1">
+           <tr>
+              <th>Item1</th>
+              <th>Item2</th>
+              <th>Item3</th>
+           </tr>
+           <tr>
+              <th> 1</th>
+              <th> 2</th>
+              <th> 3</th>
+           </tr>
+       </table><br><br>
+       <input type="button" name="answer" value="Aggiungi elementi" onclick="visualizza()" />
+       
+       <div id= "aggiunta" style="display: none">
+           <label > inserisci nome item</label><br>
+           <input type="text" id= "item"><br>
+           <label > inserisci valore</label><br>
+           <input type = "text" id="numero_inserito"><br>
+           <input type="button" value="aggiungi" onclick="inserisci()" />
+       </div>
+       
+         
    </body>
 </html>
